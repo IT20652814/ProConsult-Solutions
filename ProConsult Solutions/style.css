@@ -1,0 +1,550 @@
+/* styles.css */
+
+/* Reset default styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  
+
+  /* header */
+  
+  header {
+    background-image: url("images/img4.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 85px;
+    margin-top: 180px;
+    font-weight: 500;
+  }
+
+  header h4 {
+    font-size: 20px;
+    margin: 0.5rem 0;
+    font-weight: 100;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 35%;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    padding: 20px 7%;
+    font-size: 20px;
+  }
+  
+  nav img {
+    height: 40px;
+  }
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+
+  .logo h6 {
+    color: #fff;
+  }
+
+  .btn {
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    border-width: 3px;
+    border-color: rgb(20, 157, 225);
+  }
+  
+  section {
+    padding: 40px;
+  }
+  
+  #hero {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #555;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  /* about us */
+
+  #about-us {
+    padding: 60px 0;
+    background-color: #dfcccc;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+  }
+  
+  .about-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .about-content p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .about-content .btn {
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .about-content .btn:hover {
+    background-color: #555;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+
+
+  /* services */
+
+  #services {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .services-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .service {
+    flex: 0 0 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .service img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .service p {
+    color: #666;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .controls .prev,
+  .controls .next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .controls .prev:hover,
+  .controls .next:hover {
+    background-color: #666;
+  }
+  
+  .controls .prev i,
+  .controls .next i {
+    font-size: 16px;
+  }
+  
+  
+  
+  
+  
+  /* news */
+  
+  #news-publications {
+    padding: 60px 0;
+    background-color: #dfcccc;
+  }
+  
+  #news-publications h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .news-item {
+    margin-bottom: 40px;
+  }
+  
+  .news-item img {
+    max-width: 100%;
+  }
+  
+  .news-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .news-item p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .news-item .btn {
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .news-item .btn:hover {
+    background-color: #555;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  
+
+ /* gallery */
+
+  #gallery {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #gallery h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  #gallery p {
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .gallery-preview {
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  
+  .gallery-preview h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .gallery-preview img {
+    width: 1000px;
+    height: 300px;
+    border-radius: 4px;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-preview img:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+
+
+ /* contact us */ 
+  
+  #contact-us {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  #contact-us h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  #contact-us .mainH2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .col-md-4 {
+    background-color: #281c50;
+  }
+
+  .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .contact-info h5 {
+    color: #9b9494;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  form button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  
+
+  
+/* footer */
+
+  .footer {
+    padding: 40px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    margin-bottom: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  .social-links a.facebook {
+    color: #3b5998;
+  }
+  
+  .social-links a.twitter {
+    color: #1da1f2;
+  }
+  
+  .social-links a.instagram {
+    color: #c13584;
+  }
+
+  .social-links a.youtube {
+    color: #f60707;
+  }
+  
+  .social-links a.linkedin {
+    color: #0077b5;
+  }
+  
+  .social-links a:hover {
+    color: #ccc;
+  }
+  
+  .footer img {
+    max-width: 200px;
+  }
+  
+  
+  /* responsive all devices */
+
+/* Your existing styles go here */
+
+
+/* Media queries for responsiveness */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+  /* Adjust styles for small devices */
+}
+
+/* Medium devices (between 576px and 992px) */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* Adjust styles for medium devices */
+}
+
+/* Large devices (between 992px and 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* Adjust styles for large devices */
+}
+
+/* Extra-large devices (above 1200px) */
+@media (min-width: 1200px) {
+  /* Adjust styles for extra-large devices */
+}
+
+  

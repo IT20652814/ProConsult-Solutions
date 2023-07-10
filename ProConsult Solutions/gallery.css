@@ -1,0 +1,24 @@
+#gallery {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  #gallery h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .gallery-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .gallery-row img {
+    width: 300px;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 4px;
+  }
+  
