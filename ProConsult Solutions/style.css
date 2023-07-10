@@ -185,7 +185,6 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   }
   
 
-
   /* services */
 
   #services {
@@ -223,6 +222,10 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     max-height: 200px;
     object-fit: cover;
     border-radius: 4px;
+  }
+
+  .service img:hover {
+    transform: scale(1.1);
   }
   
   .service h3 {
@@ -290,6 +293,10 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   
   .news-item img {
     max-width: 100%;
+  }
+
+  .news-item img:hover {
+    transform: scale(1.1);
   }
   
   .news-item h3 {
